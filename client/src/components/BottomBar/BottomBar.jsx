@@ -4,7 +4,7 @@ import "./BottomBar.scss";
 
 function renderOctacat() {
   return (
-    <a href="https://github.com/octarinesec/kube-scan" target="_blank">
+    <a href="https://github.com/octarinesec/kube-scan" target="_blank" rel="noreferrer">
       <svg
         height="32"
         className="octicon octicon-mark-github"
@@ -29,7 +29,7 @@ function BottomBar({ websiteLink }) {
         {websiteLink ? (
           <>
             <div className="text"> Powered by </div>
-            <a href={websiteLink} target={"_blank"}>
+            <a href={websiteLink} target={"_blank"} rel="noreferrer">
               <div className="logo" />
             </a>
           </>
