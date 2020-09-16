@@ -54,7 +54,7 @@ function _OCTableHeaderCell (props) {
         { sortIconElement }
       </Element>
     );
-};
+}
 
 
 
