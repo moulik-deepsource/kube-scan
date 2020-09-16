@@ -11,3 +11,4 @@ enabled = true
     "nodejs",
     "browser"
   ]
+  dependency_file_paths = [ "client/package.json" ]
