@@ -9,7 +9,6 @@ import runtimeConfig from "./config";
 import getRoutes from "./routes";
 
 const assets = require(process.env.RAZZLE_ASSETS_MANIFEST);
-const path = require("path");
 
 console.log(`> RAZZLE_PUBLIC_DIR: ${process.env.RAZZLE_PUBLIC_DIR}`);
 console.log(`> PORT: ${process.env.PORT}`);

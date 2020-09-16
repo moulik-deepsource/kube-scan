@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classNames from 'classnames';
 
 
 function _OCTableHeaderCell (props) {
 
-  let onClick = (e) => {
+  let onClick = () => {
     const { isSortable } = props;
 
     if (!isSortable) {

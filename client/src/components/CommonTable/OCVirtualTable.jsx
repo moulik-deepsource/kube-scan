@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import * as PropTypes from 'prop-types';
 import cn from 'classnames';
 import { AutoSizer, List, CellMeasurerCache, CellMeasurer } from 'react-virtualized';
 import throttle from 'lodash/throttle';
@@ -48,19 +47,6 @@ function OCVirtualTable(props) {
       return gridRef.offsetTop;
     }
     return props.headerEstimatedHeight || 40;
-  }
-
-  function rowDidChange(rowIndex) {
-    rowsDidChange([rowIndex]);
-  }
-
-  function rowsDidChange(rowIndices) {
-    for (let rowIndex of (rowIndices || [])) {
-      _cache.clear(rowIndex);
-    }
-    if (_refs.list.current) {
-      _refs.list.current.recomputeRowHeights();
-    }
   }
 
   function get_headerWidth() {

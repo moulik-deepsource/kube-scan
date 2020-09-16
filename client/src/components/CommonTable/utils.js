@@ -20,7 +20,7 @@ export const parseField = (dataItem, fieldSpec, context) => {
   }
 };
 
-export const renderItemsInField = (getListItems, valueForItem) => (rowData, fieldSpec) => {
+export const renderItemsInField = (getListItems, valueForItem) => (rowData) => {
   const listItems = getListItems(rowData);
   return (
     <div className='field-items-list'>
